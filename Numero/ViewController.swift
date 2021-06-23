@@ -24,20 +24,24 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     game = Game()
     originalIndicatorColor = converterLabel.textColor
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    
     game?.reset()
     score = game?.score
+    
     numberLabel.center.x -= view.bounds.width
     romanNumeralLabel.center.x += view.bounds.width
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    
     showNextPlay()
   }
   
@@ -61,8 +65,10 @@ class ViewController: UIViewController {
 
 // MARK: - Private methods
 private extension ViewController {
+    
   func showNextPlay() {
     guard let game = game else { return }
+    
     if !game.done() {
       let (question, answer) = game.showNextPlay()
       numberLabel.text = "\(question)"
@@ -76,6 +82,7 @@ private extension ViewController {
         self.converterLabel.alpha = 1.0
       }
     }
+    
   }
   
   func controlsEnabled(_ on: Bool) {

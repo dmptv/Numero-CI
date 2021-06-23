@@ -64,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FA10ED22683464000ACBDBB /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				3052E855201040F500F6F30B /* AppDelegate.swift */,
+				3052E859201040F500F6F30B /* Main.storyboard */,
+				3052E85C201040F500F6F30B /* Assets.xcassets */,
+				18B65CBB20C09E8D00BFC903 /* LaunchScreen.storyboard */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
 		3052E849201040F500F6F30B = {
 			isa = PBXGroup;
 			children = (
@@ -85,16 +96,13 @@
 		3052E854201040F500F6F30B /* Numero */ = {
 			isa = PBXGroup;
 			children = (
-				3052E855201040F500F6F30B /* AppDelegate.swift */,
 				3052E857201040F500F6F30B /* ViewController.swift */,
 				3052E8872010950800F6F30B /* GameDoneViewController.swift */,
-				3052E859201040F500F6F30B /* Main.storyboard */,
-				3052E85C201040F500F6F30B /* Assets.xcassets */,
-				18B65CBB20C09E8D00BFC903 /* LaunchScreen.storyboard */,
-				3052E861201040F500F6F30B /* Info.plist */,
 				3052E883201041FA00F6F30B /* Game.swift */,
 				30833EE32014681A000488C0 /* Shuffle.swift */,
 				3052E8852010600D00F6F30B /* Converter.swift */,
+				0FA10ED22683464000ACBDBB /* Initial */,
+				3052E861201040F500F6F30B /* Info.plist */,
 			);
 			path = Numero;
 			sourceTree = "<group>";
